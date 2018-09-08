@@ -1,0 +1,27 @@
+<div class="center-align">
+  <img src="/logo.png" height="196px" width="196px">
+  <h5>Trash 4 Cash</h5>
+</div>
+<div id="message-box" class="card red hidden">
+  Depends
+</div>
+<div class="row">
+  <div class="col s12">
+    <label>Email</label>
+    <input type="text" name="username" [ngModel]="username" />
+  </div>
+</div>
+<div class="row">
+  <div class="col s12">
+    <label>Password</label>
+    <input type="password" name="password" [ngModel]="password" />
+  </div>
+</div>
+<div class="row">
+  <div class="col s6 left-align">
+    <a class="btn" href="javascript:;" (click)="login()">Login</a>
+  </div>
+  <div class="col s6 right-align">
+    <a class="btn" href="javascript:;" (click)="register()">Register</a>
+  </div>
+</div>

@@ -5,10 +5,42 @@
   <title>Angular</title>
   <base href="/">
 
+  <meta charset="UTF-8">
+  <title>Cash 4 Trash</title>
+  <link href="/static/fontawesome-pro-5.2.0-web/css/all.css" rel="stylesheet" type="text/css">
+  <script src="/static/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="/static/materialize/css/materialize.min.css">
+  <script src="/static/materialize/js/materialize.js"></script>
+
+  <style>
+    #background {
+      background-color: gray;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #app-container {
+      position: fixed;
+      background-color: white;
+      width: 360px;
+      height: 640px;
+      overflow: hidden;
+      left: calc(50vw - 180px);
+      top: calc(50vh - 320px);
+    }
+  </style>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+<div id="background">
+  <div id="app-container" class="card">
+    <app-root></app-root>
+  </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt6rF3bJHv5HXwrDYiT3P2pB1ozgNXwYs&libraries=visualization" async defer></script>
 </body>
 </html>

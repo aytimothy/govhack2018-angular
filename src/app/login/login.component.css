@@ -1,0 +1,9 @@
+#message-box {
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 4px;
+}
+
+.hidden {
+  display: none;
+}
